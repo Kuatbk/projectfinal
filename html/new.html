@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, 
+    initial-scale=1">
+    <title>Подать объявление    </title>
+    <link rel="stylesheet" href="../style/housefinder.css"></link> 
+  </header>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <ul class="links">
+          <li class="home"><a href="index.html">Home</a></li>
+           <li class="categories right" id="categories">
+            <a href="#categories" class="accordion">Категории</a>
+              <div class="categories-content">
+                <a href="apartmant.html">Квартиры</a> 
+                <a href="house.html">Дома</a>
+                <a href="dachi.html">Дачи</a>
+                <a href="land.html">Участки</a>
+              </div>
+            </li>         
+            </ul>
+      </nav>
+      <div class="maincontent">
+          <div class="backgroundnew">
+        </div> 
+        <form class="uploadform">
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          <table>
+            <tr>
+              <th colspan="2">Заполните форму</th>
+            </tr>
+            <tr>
+              <td>Тип</td>
+              <td>
+                <select id="select" class="select">
+                  <option value="0">Выберите тип</option>
+                  <option value="Bungalow">Квартиры</option>
+                  <option value="Duplex">Дома</option>
+                  <option value="Land">Дачи</option>
+                  <option value="Self-con">Участки</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Расположение</td>
+              <td>
+                <select class="select" id="states">
+                  <option value="0">Выберите район</option>
+                  <option value="Alatau" id="Alatau">Алатау</a></option>
+                  <option value="Nauryzbay" id="Nauryzbay">Наурызбай</option>
+                  <option value="Medeu" id="Medeu">Медеу</option>
+                  <option value="Bostandyk" id="Bostandyk">Бостандык</option>
+                  <option value="Almaly" id="Almaly">Алмалы</option>
+                  <option value="Auezov" id="Auezov">Ауезов</option>
+                  <option value="Turksib" id="Turksib">Турксиб</option>                 
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Количество комнат</td>
+              <td>
+                <input type="text" id="inputinf" placeholder="Количество комнат" autocomplete="on">
+              </td>
+            </tr>
+            <tr>
+              <td>Цена, тг</td>
+              <td>
+                <input type="text" id="inputinf" placeholder="Цена" autocomplete="on">
+              </td>
+            </tr>
+            <tr>
+              <td>Площадь</td>
+              <td>
+                <input type="text" id="inputinf" placeholder="Площадь" autocomplete="on">
+              </td>
+            </tr>
+          </table>
+            <div class="zagruzit"><input style="background-color: white; font-weight: bold;" type="submit" value="Загрузить" name="submit">
+          </div>
+        </form>
+    
+      <div class="footer" >
+        <footer>
+          <ul class="ul-footer">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

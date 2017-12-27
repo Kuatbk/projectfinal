@@ -1,0 +1,421 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	height: 100%;
+}
+
+ul li, a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+.bars{
+	margin: 4px 0 0 4px;
+	cursor: pointer;
+}
+
+.nav{
+	background-color: #262E37;
+//	height: 30px;
+}
+
+nav ul li{
+	padding: 8px 14px;
+	text-align: center;
+}
+
+.hidelinks{
+	display: none;
+}
+
+nav a{
+	color: #FFF;
+}
+
+ul .categories-content a{
+
+    color: black;
+	display: block;
+	padding: 8px;
+	text-align: left;
+}
+
+nav ul .categories-content a:hover{
+
+	background-color: #f1f1f1;
+	color: red;
+}
+.categories:hover .categories-content{
+	display: block;
+}
+
+.links{
+	display: none;
+}
+
+div.img{
+	border: 1px solid #CCC;
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer{
+	background-color: #262E37;
+	width: 100%;
+	padding: 1%;
+	opacity: 0.9;
+	height: 80px;
+	bottom: 0;
+}
+
+.ul-footer a{
+	color: #FFF;
+	margin: 10px;
+}
+
+.ul-footer li{
+	float: none;
+}
+
+footer ul{
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+footer a:hover{
+	color: #F00;
+	background: #f1f1f1;
+	border-radius: 3px;
+}
+
+@media only screen and (min-width: 300px){
+	.uploadform{
+		width: 100%;
+	}
+	.nav{
+		height: 60px;
+		
+		}
+	
+	nav ul{
+		float: none;
+	}
+	
+	nav ul li{
+		display: block;
+		float: left;
+		margin-left: 5px;
+		padding: 15px 8px;
+	}
+	
+	.links{
+		display: block;
+	}
+	
+	i.fa{
+			font-size: 30px;		
+	}
+	
+	.bars{
+		display: none;
+	}
+	
+	nav li a{
+		padding: 16px 3px 0 0;
+	}
+	
+	nav ul li.right, .search{
+		float: right;
+		z-index: 999;
+	}
+	
+	.search{
+		padding: 3px 5px 0 0;
+		
+	}
+	.maincontent .searchmain{
+		padding-left: 40%;
+		padding-top: 2%;
+	}
+	
+	
+	.searchglass{
+		float: right;
+	}	
+	
+		
+	.hideinput{
+		display: none;
+	}
+	
+	nav ul li.active a{
+		color: #4CA;
+	}
+	
+	.nav-fixed{
+		top: 0;
+		z-index: 100;
+		position: fixed;
+		width: 100%;
+	}
+	
+	.active{
+		height: 60px;
+		border-bottom: 5px solid #4CA;
+	}
+	
+	.categories-content{
+	display: none;
+	position: absolute;
+	background-color: #F9F9F9;
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px
+	rgba(0,0,0,0.2);
+	z-index: 99999999999;
+    }
+	
+	.active .categories-content a{
+		color: black;
+	}
+	
+	.categories:hover .categories-content{
+		display: block;
+	}
+	
+	div.background-cover{
+	background-image: url("../image/background.jpg");
+	width: 100%;
+	min-width: 100%;
+	height: 700px;
+	background-size: cover;
+	opacity: 0.6;
+    }
+    div.backgroundadmin{
+	background-color: LightGrey;
+	width: 100%;
+	min-width: 100%;
+	height: 700px;
+	background-size: cover;
+	opacity: 0.6;
+    }
+	
+	div.backgroundkvart{
+	background-image: url("../image/kvart.jpg");
+	width: 100%;
+	min-width: 100%;
+	height: 600px;
+	background-size: cover;
+    }
+
+	div.backgrounddachi{
+	background-image: url("../image/main.jpg");
+	width: 100%;
+	min-width: 100%;
+	height: 600px;
+	background-size: cover;
+    }
+    div.backgroundnew{
+	background-color: White;
+	width: 100%;
+	min-width: 100%;
+	height: 600px;
+	background-size: cover;
+    }
+    
+    div.backgroundhouse{
+	background-image: url("../image/house.jpg");
+	width: 100%;
+	min-width: 100%;
+	height: 600px;
+	background-size: cover;
+    }
+  
+    div.backgrounduch{
+	background-image: url("../image/uch.jpg");
+	width: 100%;
+	min-width: 100%;
+	height: 700px;
+	background-size: cover;
+    }
+	input{
+		width: 250px;
+		height: 30px;
+	}	
+	
+	.footer{
+		position: fixed;
+		bottom: 0;	
+	}
+	
+	.ul-footer li{
+		float: left;
+	}
+.uploadform{
+	padding: 20px;
+	position: absolute;
+	top:10%;
+	border: 1px solid LightGrey;
+	margin-left: 1%;
+	margin-top: 20px;
+	border-radius: 5px;
+	background-color: LightGrey;
+	padding-left: 5%;
+	width: 100%;
+}	
+.zagruzit{
+	padding: 20px; 	
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+ 
+.maincontent .cont{
+	border: 1px solid LightGrey;	
+	padding: 1%;
+	background-color: LightGrey;
+
+}
+@media screen and (max-width: 1024px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+.images div.desc{display: none;}
+.images .img img{width: 110px; border: 1px solid black;
+	margin-bottom: 1%;margin-right: 10%;}
+
+.allimages{
+	padding-left: 13%;
+	display: inline-block;
+	position: absolute;
+	top:30%;
+	
+}	
+}
+
+	.allimages{
+	position: absolute;
+	top:30%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 13%
+}	
+.search{
+	position: absolute;
+	top: 10%;
+	right: 0;
+}
+}
+
+.maincontent .allimages .images .img{
+	border: 2px solid black;
+
+}	
+div.img:hover{
+	border: 5px solid #777;
+
+}
+
+}
+div.img img{
+	width: 100%;
+	height: auto;
+}
+ div.desc{
+	padding: 5px;
+	text-align: center;
+	font-size: 13px;
+	background-color: white;
+	opacity: 0.8;
+
+}
+.allimages{
+	position: absolute;
+	top:20%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 5%;
+}	
+.approve{
+	position: absolute;
+	left: 21%;
+	top: 5%;
+}
+.approvem{
+	position: absolute;
+	left: 30%;
+	top: 5%;
+}
+.price{
+		position: absolute;
+		left: 10%; 
+		top: 35%;
+		border: 1px solid LightGrey;
+		background-color: lightGrey; 
+		opacity: 0.0;
+		}
+.price:hover {
+					position: absolute;
+					top: 35%;
+					left: 10%; 
+					border: 1px solid LightGrey;
+					background-color: lightGrey; 
+					opacity: 1;
+					}
+
+.itemimg img{position: absolute;
+	top: 15%;
+	left: 2%;
+	width: 400; height: 350;}
+.descitem{
+	position: absolute;
+	top: 15%;
+	left: 30%;
+}
+#slider1 { height: 1%; overflow:hidden; padding: 0 0 10px;   }
+#slider1 .viewport { float: left; width: 420px; height: 250px; overflow: hidden; position: relative; }
+#slider1 .buttons { background:url("../image/buttons.png") no-repeat scroll 0 0 transparent; 
+					display: block; margin: 100px 10px 0 0; background-position: 0 -38px; 
+					text-indent: -999em; float: left; width: 39px; height: 37px; overflow: hidden; position: relative; }
+#slider1 .next { background-position: 0 0; margin: 100px 0 0 10px;  }
+#slider1 .disable { visibility: hidden; }
+#slider1 .overview { list-style: none; position: absolute; padding: 0; margin: 0; width: 350px; left: 0 top: 0; }
+#slider1 .overview li{ float: left; margin: 0 220px 0 0; padding: 1px; height: 121px; border: 1px solid #dcdcdc; width: 236px;}
+.sliderrr{
+	position: absolute;
+	bottom: 17%;
+	left: 28%;
+}
